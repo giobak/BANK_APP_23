@@ -1,6 +1,6 @@
-package com.example.bank_application.entity;
+package com.andersenland.bank_app_23.entity;
 
-import com.example.bank_application.entity.enums.ClientStatus;
+import com.andersenland.bank_app_23.entity.enums.ClientStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,28 +21,38 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private UUID id;
+
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
     private ClientStatus status;
+
     @Column(name = "tax_code")
     private String taxCode;
+
     @Column(name = "first_name")
     private String firstName;
+
     @Column(name = "last_name")
     private String lastName;
+
     @Column(name = "email")
     private String email;
+
     @Column(name = "address")
     private String address;
+
     @Column(name = "phone")
     private String phone;
+
     @Column(name = "created_at")
     private LocalDateTime createdAt;
+
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL)
     private Set<Account> accounts;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "manager_id", referencedColumnName="id")
     private Manager manager;

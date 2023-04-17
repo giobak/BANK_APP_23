@@ -1,6 +1,7 @@
-package com.example.bank_application.entity;
+package com.andersenland.bank_app_23.entity;
 
-import com.example.bank_application.entity.enums.TransactionType;
+import com.andersenland.bank_app_23.entity.enums.TransactionType;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -20,19 +21,25 @@ public class Transaction {
     @GeneratedValue(generator = "UUID", strategy = GenerationType.UUID)
     @Column(name = "id")
     private UUID id;
+
     @Column(name = "type")
     @Enumerated(EnumType.STRING)
     private TransactionType type;
+
     @Column(name = "amount")
     private double amount;
+
     @Column(name = "description")
     private String description;
+
+
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "debit_account_id", referencedColumnName="id")
     private Account debitAccount;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "credit_account_id", referencedColumnName="id")
     private Account creditAccount;

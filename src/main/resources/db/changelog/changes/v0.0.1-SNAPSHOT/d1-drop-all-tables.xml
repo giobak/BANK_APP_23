@@ -3,7 +3,7 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                    https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
-http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <changeSet id="drop transactions tables" author="GIO">
         <preConditions onFail="CONTINUE">
@@ -33,12 +33,6 @@ http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbch
         <dropTable tableName="clients"/>
     </changeSet>
 
-    <changeSet id="drop products_managers tables" author="GIO">
-        <preConditions onFail="CONTINUE">
-            <tableExists tableName="products_managers"/>
-        </preConditions>
-        <dropTable tableName="products_managers"/>
-    </changeSet>
 
     <changeSet id="drop managers tables" author="GIO">
         <preConditions onFail="CONTINUE">

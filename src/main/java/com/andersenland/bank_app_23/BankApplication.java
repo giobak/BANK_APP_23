@@ -1,4 +1,4 @@
-package com.example.bank_application;
+package com.andersenland.bank_app_23;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

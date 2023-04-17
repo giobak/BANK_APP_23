@@ -1,4 +1,4 @@
-package com.example.bank_application.entity.enums;
+package com.andersenland.bank_app_23.entity.enums;
 
 public enum ManagerStatus {
     ACTIVE("ACTIVE"),
