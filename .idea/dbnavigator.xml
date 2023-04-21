@@ -20,9 +20,13 @@
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files />
+    <open-files>
+      <object connection-id="2ed4bffd-717e-4131-ade4-bf6025452c28" object-ref="schemas/bank/tables/databasechangelog" />
+    </open-files>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="2ed4bffd-717e-4131-ade4-bf6025452c28" dataset="bank.databasechangelog" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="2ed4bffd-717e-4131-ade4-bf6025452c28" dataset="bank.databasechangeloglock" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="3d654333-1748-4ad1-bd94-cebab79e14e4" dataset="gt37_38.customers" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="3d654333-1748-4ad1-bd94-cebab79e14e4" dataset="bank.databasechangelog" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="3d654333-1748-4ad1-bd94-cebab79e14e4" dataset="bank.databasechangeloglock" active-filter-id="EMPTY_FILTER">
