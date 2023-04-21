@@ -5,7 +5,7 @@
                         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
 http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
-    <include file="db/changelog/changes/v0.0.1-SNAPSHOT/d1-drop-all-tables.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/d1-drop-all-tables.xml"/>
     <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t1-create-table-managers-changelog.xml"/>
     <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t2-create-table-products-changelog.xml"/>
     <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t4-create-table-clients-changelog.xml"/>
